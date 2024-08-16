@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #111315;
+
+}
+
+.header img {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center center;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 30%;
+    margin-left: 20vh;
+    background-color: #1B1D1F;
+    border-radius: 15px;
+}
+
+.titulos {
+    text-align: center;
+    width: 45%;
+    margin-top: 30px;
+}
+
+.titulos h1 {
+    color: #FEF7EE;
+    font-size: x-large
+}
+
+.titulos p {
+    margin-top: 15px;
+    color: #6F757C;
+}
+
+.productos .botones a {
+    display: inline-block;
+    text-decoration: none;
+    color: #FEF7EE;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: small;
+}
+
+.btn-coloreado {
+    background-color: #6F757C;
+    border-radius: 10px;
+}
+
+.tazas-cafe .info-cafe .imagen img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.imagen {
+    position: relative;
+
+}
+
+.tazas-cafe {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 90px;
+    margin-top: 100px;
+}
+
+.popular {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.imagen p {
+    color: #111315;
+    background-color: #F6C768;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.descripcion .nombre-cafe {
+    color: #FEF7EE;
+}
+
+.descripcion .precio {
+    background-color: #BEE3CC;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.descripcion {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.calificacion {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.calificacion img {
+    padding: 0px 5px 0px 0px;
+}
+
+.calificacion .nota {
+    color: #BEE3CC;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.calificacion .votos {
+    color: #6F757C;
+    font-size: 15px;
+}
+
+.cafe-agotado {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    /* Asegúrate de que el contenedor padre use Flexbox */
+    body {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh; /* O el valor necesario para ajustar la altura */
+        margin: 0; /* Elimina los márgenes del body */
+    }
+
+    .productos {
+        width: 90%; /* Ajusta el ancho según sea necesario */
+        margin: 0 auto; /* Centra horizontalmente */
+        text-align: center; /* Centra el texto si es necesario */
+    }
+
+    .tazas-cafe {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Organiza los items en una sola columna */
+        gap: 20px; /* Espacio entre elementos */
+    }
+
+    .header{
+        margin-top: -540px;
+    }
+
+    .titulos{
+        margin-top: 300px;
+    }
+}
+
+
+@media (max-width: 640px) {
+    body {
+        display: flex;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        height: 100vh; /* O el valor necesario para ajustar la altura */
+        margin: 0; /* Elimina los márgenes del body */
+    }
+
+    .productos {
+        width: 90%; /* Ajusta el ancho según sea necesario */
+        margin: 0 auto; /* Centra horizontalmente */
+        text-align: center; /* Centra el texto si es necesario */
+        position: absolute;
+        top: 150px;
+        height: 220%;
+    }
+
+    .tazas-cafe {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Organiza los items en una sola columna */
+        gap: 20px; /* Espacio entre elementos */
+        margin-top: 100px;
+    }
+
+    .header{
+        margin-top: -540px;
+        position: relative;
+    }
+
+    .titulos{
+        margin-top: 300px;
+    }
+}
